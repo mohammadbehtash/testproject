@@ -16,6 +16,8 @@ export class BaseComponent {
     this.msgService.addMessage(msg)
     console.log(this.message);
     console.log('this.msgService.addMessage(msg)');
+    console.log('you you2');
+    
   }
   
   updateMessage(newMsg:string) {
