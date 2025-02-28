@@ -1,0 +1,14 @@
+<app-child1 [customMessage]="'child 1222222'" (messageSend)="handelMessage($event)"></app-child1>
+<app-child2 [customMessage]="'child 2'"></app-child2>
+<p>Parent received: {{ parentMessage }}</p>
+<nav>
+  <a style="background: red;" routerLink="/child1">Go to Child 1</a>
+  <a style="background: blue;" routerLink="child2">Go to Child 2</a>
+</nav>
+<ul>
+  @for (item of message; track $index) {
+
+    <li >{{ item }} & {{$index}}</li>
+  }
+</ul>
+<router-outlet></router-outlet>
