@@ -24,6 +24,7 @@ export class BaseComponent {
     this.message = newMsg
     this.msgService.addMessage(newMsg)
     console.log(newMsg);
+    console.log('mmdys');
     
   }
 }
